@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        li {
+            display: inline;
+            margin: 0 15px;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 20px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .chessboard {
+            display: block;
+            margin: 100px auto; /* Центрируем изображение */
+            max-width: 100%; /* Убедитесь, что пробел убран */
+            height: auto; /* Автоматическое изменение высоты */
+        }
+    </style>
+</head>
+<body>
+    <h1>МАГАЗИН ШАХМАТ</h1>
+    <ul>
+        <li><a href="/">Главная</a></li>
+        <li><a href="/games/">Магазин</a></li>
+        <li><a href="/cart/">Корзина</a></li>
+    </ul>
+        {% load static %}
+    <img src="{% static 'img/chessboard.png' %}" alt="Шахматная доска" class="chessboard">   
+</body>
+</html>
